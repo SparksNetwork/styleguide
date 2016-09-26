@@ -1,6 +1,6 @@
 module.exports = {
   paths: {
-    public: 'dist',
+    public: 'docs',
     watched: ['src']
   },
   files: {
