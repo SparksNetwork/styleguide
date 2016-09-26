@@ -97,7 +97,7 @@ button.primary, button.submit {
   border-color: #f76303; }
 
 /* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
-button.secondary {
+button.secondary, button.cancel {
   color: #9b9b9b;
   background-color: #fff;
   border-color: #9b9b9b; }

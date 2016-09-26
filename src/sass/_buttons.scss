@@ -20,6 +20,10 @@ button {
   font-size: 1em;
 }
 
+button.cancel {
+  @extend button.secondary;
+}
+
 button.submit {
   @extend button.primary;
 }
