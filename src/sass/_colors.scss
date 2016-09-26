@@ -1,0 +1,38 @@
+$colors: (
+        primary: #f76303,
+        secondary: #9b9b9b,
+        google: #d10000,
+        facebook: #4a4e9e,
+        faded: #e5e5e5,
+        box-footer: #4a4a4a,
+        input: #4a4a4a,
+        label: #4a4a4a,
+);
+
+$background-colors: (
+        primary: map-get($colors, primary),
+        secondary: #fff,
+        google: map-get($colors, google),
+        facebook: map-get($colors, facebook),
+        box-footer: #e7f1fc,
+        input: #fff,
+);
+
+$foreground-colors: (
+        primary: #fff,
+        secondary: #9b9b9b,
+        google: #fff,
+        facebook: #fff,
+        box-footer: map-get($colors, box-footer),
+        input: #4a4a4a,
+);
+
+$border-colors: (
+        primary: map-get($colors, primary),
+        secondary: map-get($colors, secondary),
+        google: map-get($colors, google),
+        facebook: map-get($colors, facebook),
+        box-footer: map-get($background-colors, box-footer),
+        input: #ccc,
+);
+

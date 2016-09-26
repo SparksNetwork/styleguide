@@ -1,0 +1,22 @@
+@import './variables';
+@import './colors';
+
+@each $key, $value in $background-colors {
+  .#{$key}-box {
+    color: map-get($foreground-colors, $key);
+    background-color: map-get($background-colors, $key);
+    border-color: map-get($border-colors, $key)
+  }
+}
+
+.box {
+  padding: $box-padding $box-padding 0 $box-padding;
+
+  .footer {
+    @extend .box-footer-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+}

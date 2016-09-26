@@ -1,0 +1,18 @@
+@import './boxes';
+@import './buttons';
+@import './divider';
+@import './forms';
+
+html, body {
+  font-size: 14px;
+}
+
+html, body, * {
+  box-sizing: border-box;
+}
+
+.divider {
+  @include divider(map-get($colors, faded), 10px);
+  color: map-get($colors, secondary);
+  text-transform: uppercase;
+}

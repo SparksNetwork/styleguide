@@ -1,0 +1,26 @@
+@import './variables';
+@import './colors';
+@import './boxes';
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+label {
+  color: map-get($foreground-colors, label);
+  font-weight: bold;
+  display: table-row;
+}
+
+input {
+  border-radius: $small-radius;
+  border-width: 1px;
+  border-style: solid;
+  @extend .input-box;
+  padding: 10px;
+  display: table-row;
+  width: 100%;
+}

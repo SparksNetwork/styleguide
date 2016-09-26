@@ -1,0 +1,25 @@
+@import './boxes';
+
+$button-default-radius: 4px;
+$button-default-border: 1px solid map-get($colors, secondary);
+$button-default-padding: 10px;
+
+@each $key, $value in $background-colors {
+  button.#{$key} {
+    color: map-get($foreground-colors, $key);
+    background-color: map-get($background-colors, $key);
+    border-color: map-get($border-colors, $key)
+  }
+}
+
+button {
+  background: transparent;
+  border-radius: $button-default-radius;
+  border: $button-default-border;
+  padding: $button-default-padding;
+  font-size: 1em;
+}
+
+button.submit {
+  @extend button.primary;
+}
