@@ -130,14 +130,18 @@ section {
         padding: 30px; } }
 
 /* line 3, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
+h1, h2, .list .header, h3, h4, h5 {
+  margin: 0; }
+
+/* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
 h1 {
   font-size: 1.25em; }
 
-/* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
+/* line 11, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
 h2, .list .header {
   font-size: 1.125em; }
 
-/* line 23, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
+/* line 27, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
 .header {
   font-size: 1.25em;
   height: 4.375em;
