@@ -6,6 +6,9 @@
 @import './divider';
 @import './forms';
 @import './lists';
+@import './avatars';
+@import './status';
+@import './pills';
 
 html, body {
   font-size: #{$browser-context}px;

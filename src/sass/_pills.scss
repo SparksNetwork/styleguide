@@ -1,0 +1,11 @@
+.pill {
+  @extend .pill-box;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: em(30);
+  border-radius: em(15);
+  padding: 0 em(20);
+  font-size: em(14);
+}

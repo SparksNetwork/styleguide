@@ -1,0 +1,32 @@
+@import './variables';
+@import './colors';
+
+$status-size: 10px;
+
+@each $key, $value in $status-colors {
+  .#{$key} {
+    color: $value;
+  }
+}
+
+.status {
+  position: relative;
+
+  &:after {
+    content: '';
+    border-radius: 50%;
+    width: $status-size;
+    height: $status-size;
+    display: block;
+    position: absolute;
+    border: 2px solid white;
+    right: $status-size / 2;
+    bottom: $status-size / 2;
+  }
+
+  @each $key, $value in $status-colors {
+    &.#{$key}:after {
+      background: $value;
+    }
+  }
+}

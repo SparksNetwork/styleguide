@@ -18,8 +18,11 @@ module.exports = {
     static: {
       processors: [
         require('html-brunch-static')({
-
-
+          handlebars: {
+            enableProcessor: {
+              fileMatch: /\.html$/
+            }
+          }
         })
       ]
     },

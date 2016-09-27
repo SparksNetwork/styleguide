@@ -67,9 +67,14 @@ strong, .strong {
   color: #d9d9d9;
   background-color: #eeeeee; }
 
+/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+.pill-box, .pill {
+  color: #fff;
+  background-color: #45294e; }
+
 /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .box {
-  padding: 30px 30px 0 30px; }
+  padding: 1.875em 1.875em 0 1.875em; }
   @media (min-width: 40em) {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
@@ -78,8 +83,8 @@ strong, .strong {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
       min-width: 470px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px; } }
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; } }
   @media (max-width: 29.375em) {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
@@ -91,15 +96,15 @@ strong, .strong {
   /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .box .footer {
     position: relative;
-    top: 12px;
-    margin: 0 -30px 0 -30px;
+    top: 0.75em;
+    margin: 0 -1.875em 0 -1.875em;
     text-align: center;
     padding: 10px; }
     @media (min-width: 29.375em) {
       /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
       .box .footer {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px; } }
+        border-bottom-left-radius: 0.625em;
+        border-bottom-right-radius: 0.625em; } }
 
 /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 section {
@@ -147,7 +152,11 @@ h2, .list .header {
   height: 4.375em;
   display: flex;
   align-items: center;
-  padding: 0 20px 0 20px; }
+  padding: 0 1.25em 0 1.25em; }
+  /* line 34, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
+  .header .avatar {
+    width: 1.875em;
+    height: 1.875em; }
 
 /* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .primary-box {
@@ -205,9 +214,14 @@ h2, .list .header {
   color: #d9d9d9;
   background-color: #eeeeee; }
 
+/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+.pill-box, .pill {
+  color: #fff;
+  background-color: #45294e; }
+
 /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .box {
-  padding: 30px 30px 0 30px; }
+  padding: 1.875em 1.875em 0 1.875em; }
   @media (min-width: 40em) {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
@@ -216,8 +230,8 @@ h2, .list .header {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
       min-width: 470px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px; } }
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; } }
   @media (max-width: 29.375em) {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
@@ -229,15 +243,15 @@ h2, .list .header {
   /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .box .footer {
     position: relative;
-    top: 12px;
-    margin: 0 -30px 0 -30px;
+    top: 0.75em;
+    margin: 0 -1.875em 0 -1.875em;
     text-align: center;
     padding: 10px; }
     @media (min-width: 29.375em) {
       /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
       .box .footer {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px; } }
+        border-bottom-left-radius: 0.625em;
+        border-bottom-right-radius: 0.625em; } }
 
 /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 section {
@@ -323,10 +337,15 @@ button.list-divider {
   color: #d9d9d9;
   background-color: #eeeeee; }
 
+/* line 9, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
+button.pill {
+  color: #fff;
+  background-color: #45294e; }
+
 /* line 16, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
 button {
   background: transparent;
-  border-radius: 6px;
+  border-radius: 0.375em;
   border: 2px solid #9b9b9b;
   padding: 10px;
   font-size: 1em;
@@ -335,11 +354,11 @@ button {
   cursor: pointer; }
   /* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
   button:not(:last-child) {
-    margin-right: 10px; }
+    margin-right: 1.25em/2; }
     @media (min-width: 29.375em) {
       /* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
       button:not(:last-child) {
-        margin-right: 20px; } }
+        margin-right: 1.25em; } }
   /* line 37, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
   button:focus {
     outline: none;
@@ -509,9 +528,14 @@ button.cancel {
   color: #d9d9d9;
   background-color: #eeeeee; }
 
+/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+.pill-box, .pill {
+  color: #fff;
+  background-color: #45294e; }
+
 /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .box {
-  padding: 30px 30px 0 30px; }
+  padding: 1.875em 1.875em 0 1.875em; }
   @media (min-width: 40em) {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
@@ -520,8 +544,8 @@ button.cancel {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
       min-width: 470px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px; } }
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; } }
   @media (max-width: 29.375em) {
     /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
@@ -533,15 +557,15 @@ button.cancel {
   /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .box .footer {
     position: relative;
-    top: 12px;
-    margin: 0 -30px 0 -30px;
+    top: 0.75em;
+    margin: 0 -1.875em 0 -1.875em;
     text-align: center;
     padding: 10px; }
     @media (min-width: 29.375em) {
       /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
       .box .footer {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px; } }
+        border-bottom-left-radius: 0.625em;
+        border-bottom-right-radius: 0.625em; } }
 
 /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 section {
@@ -583,8 +607,8 @@ fieldset {
 label {
   font-weight: bold;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 1.25em;
+  margin-bottom: 0.625em; }
   /* line 20, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
   label .help {
     float: right;
@@ -593,7 +617,7 @@ label {
 
 /* line 27, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 input {
-  border-radius: 6px;
+  border-radius: 0.375em;
   border-width: 2px;
   border-style: solid;
   font-size: 1.125em;
@@ -603,12 +627,12 @@ input {
 
 /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 form .actions {
-  margin: 40px 0;
+  margin: 2.5em 0;
   width: 100%; }
   /* line 42, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
   form .actions button.submit {
     float: right;
-    width: 200px; }
+    width: 12.5em; }
   @media (max-width: 29.375em) {
     /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
     form .actions {
@@ -621,44 +645,76 @@ form .actions {
 
 /* line 59, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 .form {
-  padding: 30px 0 0 0; }
+  padding: 1.875em 0 0 0; }
 
-/* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+/* line 34, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
 .list {
   display: block; }
-  /* line 17, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+  /* line 37, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
   .list .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 3.75em;
     width: 100%;
-    padding: 0 20px 0 20px;
+    padding: 0 1.25em 0 1.25em;
     height: 3.125em;
     font-weight: bold; }
-  /* line 25, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .header .avatar {
+      width: 40px;
+      height: 40px; }
+    /* line 18, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .header > p {
+      display: block;
+      flex-grow: 1; }
+    /* line 23, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .header .subline {
+      display: block;
+      font-size: 0.75em; }
+    /* line 28, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .header .actions {
+      flex-shrink: 1;
+      display: flex; }
+  /* line 45, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
   .list .section {
     display: block;
     height: auto; }
-    /* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    /* line 49, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
     .list .section > div {
       display: flex;
       flex-direction: row;
       align-items: center;
       height: 3.75em;
       width: 100%;
-      padding: 0 20px 0 20px;
+      padding: 0 1.25em 0 1.25em;
       border: 1px solid #e5e3e5; }
-    /* line 34, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      .list .section > div .avatar {
+        width: 40px;
+        height: 40px; }
+      /* line 18, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      .list .section > div > p {
+        display: block;
+        flex-grow: 1; }
+      /* line 23, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      .list .section > div .subline {
+        display: block;
+        font-size: 0.75em; }
+      /* line 28, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      .list .section > div .actions {
+        flex-shrink: 1;
+        display: flex; }
+    /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
     .list .section .header {
       font-size: 0.875em; }
-      /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      /* line 58, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
       .list .section .header span {
         display: block; }
-      /* line 42, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+      /* line 62, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
       .list .section .header span:first-child {
         flex-grow: 1; }
-  /* line 48, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+  /* line 68, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
   .list .divider {
     display: block;
     text-align: center;
@@ -669,7 +725,7 @@ form .actions {
     align-items: center;
     height: 3.75em;
     width: 100%;
-    padding: 0 20px 0 20px;
+    padding: 0 1.25em 0 1.25em;
     height: 2.5em; }
     /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_divider.scss */
     .list .divider span {
@@ -691,19 +747,86 @@ form .actions {
       .list .divider span:after {
         left: 100%;
         margin-left: 0; }
+    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .divider .avatar {
+      width: 40px;
+      height: 40px; }
+    /* line 18, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .divider > p {
+      display: block;
+      flex-grow: 1; }
+    /* line 23, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .divider .subline {
+      display: block;
+      font-size: 0.75em; }
+    /* line 28, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
+    .list .divider .actions {
+      flex-shrink: 1;
+      display: flex; }
 
-/* line 10, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 3, /Users/jeremy/src/sparks/styleguide/src/sass/_avatars.scss */
+.avatar {
+  object-fit: cover;
+  margin-right: 10px; }
+  /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_avatars.scss */
+  .avatar.rounded {
+    border-radius: 0.375em; }
+  /* line 11, /Users/jeremy/src/sparks/styleguide/src/sass/_avatars.scss */
+  .avatar.round {
+    border-radius: 50%; }
+
+/* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_status.scss */
+.ok {
+  color: #00cc5a; }
+
+/* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_status.scss */
+.unknown {
+  color: #cc8f00; }
+
+/* line 12, /Users/jeremy/src/sparks/styleguide/src/sass/_status.scss */
+.status {
+  position: relative; }
+  /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_status.scss */
+  .status:after {
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    border: 2px solid white;
+    right: 5px;
+    bottom: 5px; }
+  /* line 28, /Users/jeremy/src/sparks/styleguide/src/sass/_status.scss */
+  .status.ok:after {
+    background: #00cc5a; }
+  /* line 28, /Users/jeremy/src/sparks/styleguide/src/sass/_status.scss */
+  .status.unknown:after {
+    background: #cc8f00; }
+
+/* line 1, /Users/jeremy/src/sparks/styleguide/src/sass/_pills.scss */
+.pill {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 1.875em;
+  border-radius: 0.9375em;
+  padding: 0 1.25em;
+  font-size: 0.875em; }
+
+/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
 html, body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0; }
 
-/* line 17, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 20, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
 html, body, * {
   box-sizing: border-box; }
 
-/* line 21, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 24, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
 .divider {
   display: block;
   text-align: center;
@@ -711,7 +834,7 @@ html, body, * {
   white-space: nowrap;
   color: #9b9b9b;
   text-transform: uppercase;
-  padding: 30px 0 0 0;
+  padding: 1.875em 0 0 0;
   font-weight: bold; }
   /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_divider.scss */
   .divider span {
@@ -734,14 +857,14 @@ html, body, * {
       left: 100%;
       margin-left: 0.625em; }
 
-/* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
 .federated-buttons {
   display: flex; }
-  /* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
   .federated-buttons button {
     flex-grow: 1; }
     @media (max-width: 29.375em) {
-      /* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+      /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
       .federated-buttons button {
         font-size: 0.75em; } }
 

@@ -13,6 +13,11 @@ $colors: (
         link: #1778e9,
 );
 
+$status-colors: (
+        ok: #00cc5a,
+        unknown: #cc8f00,
+);
+
 $background-colors: (
         primary: map-get($colors, primary),
         secondary: #fff,
@@ -24,6 +29,7 @@ $background-colors: (
         list-header: #d5cfd6,
         list-section: #e5e3e5,
         list-divider: #eeeeee,
+        pill: #45294e,
 );
 
 $foreground-colors: (
@@ -37,6 +43,7 @@ $foreground-colors: (
         list-header: #000,
         list-section: #727172,
         list-divider: #d9d9d9,
+        pill: #fff,
 );
 
 $border-colors: (

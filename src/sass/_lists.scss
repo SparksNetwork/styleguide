@@ -9,6 +9,26 @@
   height: 3.75em;
   width: 100%;
   padding: 0 $list-padding 0 $list-padding;
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  > p {
+    display: block;
+    flex-grow: 1;
+  }
+
+  .subline {
+    display: block;
+    font-size: em(12);
+  }
+
+  .actions {
+    flex-shrink: 1;
+    display: flex;
+  }
 }
 
 .list {

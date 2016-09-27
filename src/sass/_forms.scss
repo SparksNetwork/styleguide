@@ -14,8 +14,8 @@ label {
   color: map-get($foreground-colors, label);
   font-weight: bold;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: em(20);
+  margin-bottom: em(10);
 
   .help {
     float: right;
@@ -36,12 +36,12 @@ input {
 }
 
 form .actions {
-  margin: 40px 0;
+  margin: em(40) 0;
   width: 100%;
 
   button.submit {
     float: right;
-    width: 200px;
+    width: em(200);
   }
 
   @include mq($until: 470px) {
