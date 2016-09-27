@@ -7,6 +7,10 @@ $colors: (
         box-footer: #4a4a4a,
         input: #4a4a4a,
         label: #4a4a4a,
+        list-header: #4a1f50,
+        list-section: #4a1f50,
+        list-divider: #eeeeee,
+        link: #1778e9,
 );
 
 $background-colors: (
@@ -14,8 +18,12 @@ $background-colors: (
         secondary: #fff,
         google: map-get($colors, google),
         facebook: map-get($colors, facebook),
+        box: #fff,
         box-footer: #e7f1fc,
         input: #fff,
+        list-header: #d5cfd6,
+        list-section: #e5e3e5,
+        list-divider: #eeeeee,
 );
 
 $foreground-colors: (
@@ -23,8 +31,12 @@ $foreground-colors: (
         secondary: #9b9b9b,
         google: #fff,
         facebook: #fff,
+        box: #000,
         box-footer: map-get($colors, box-footer),
         input: #4a4a4a,
+        list-header: #000,
+        list-section: #727172,
+        list-divider: #d9d9d9,
 );
 
 $border-colors: (

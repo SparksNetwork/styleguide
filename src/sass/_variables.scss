@@ -1,4 +1,13 @@
-$small-radius: 4px;
-$large-radius: 10px;
+$small-radius: 6px;
+$large-radius: 12px;
 
-$box-padding: 20px;
+$button-spacing: 20px;
+$list-padding: 20px;
+$box-padding: 30px;
+
+$browser-context: 16;
+$default-font: 'Open Sans', sans-serif;
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

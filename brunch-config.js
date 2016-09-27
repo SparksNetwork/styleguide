@@ -8,8 +8,9 @@ module.exports = {
       joinTo: 'app.js'
     },
     stylesheets: {joinTo: 'app.css'},
-
-
+  },
+  conventions: {
+    assets: /src\/assets/
   },
   plugins: {
     postcss: {processors: [require('autoprefixer')]},

@@ -1,10 +1,17 @@
+@import './variables';
+@import './fonts';
 @import './boxes';
+@import './layout';
 @import './buttons';
 @import './divider';
 @import './forms';
+@import './lists';
 
 html, body {
-  font-size: 14px;
+  font-size: #{$browser-context}px;
+  font-family: $default-font;
+  margin: 0;
+  padding: 0;
 }
 
 html, body, * {
@@ -12,7 +19,22 @@ html, body, * {
 }
 
 .divider {
-  @include divider(map-get($colors, faded), 10px);
+  @include divider(map-get($colors, faded), 0.625em);
   color: map-get($colors, secondary);
   text-transform: uppercase;
+  padding: $box-padding 0 0 0;
+  font-weight: bold;
 }
+
+.federated-buttons {
+  display: flex;
+
+  button {
+    flex-grow: 1;
+
+    @include mq($until: 470px) {
+      font-size: em(12);
+    }
+  }
+}
+

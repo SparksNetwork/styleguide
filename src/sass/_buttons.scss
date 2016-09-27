@@ -1,7 +1,8 @@
+@import './variables';
 @import './boxes';
 
-$button-default-radius: 4px;
-$button-default-border: 1px solid map-get($colors, secondary);
+$button-default-radius: $small-radius;
+$button-default-border: 2px solid map-get($colors, secondary);
 $button-default-padding: 10px;
 
 @each $key, $value in $background-colors {
@@ -18,10 +19,48 @@ button {
   border: $button-default-border;
   padding: $button-default-padding;
   font-size: 1em;
+  font-family: $default-font;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: $button-spacing / 2;
+
+    @include mq($from: 470px) {
+      margin-right: $button-spacing;
+    }
+  }
+
+  &:hover {
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.33);
+  }
+
+  &:active {
+    animation: button-expand .2s both;
+    background-image: linear-gradient(rgba(255,255,255,.33),
+            rgba(255,255,255,.33));
+  }
+}
+
+@keyframes button-expand {
+  @for $i from 1 through 49 {
+    #{$i}% {
+      background-image: linear-gradient(90deg,
+            rgba(255,255,255,0) 0%,
+            rgba(255, 255, 255, .33) (50 - $i + 0%),
+            rgba(255, 255, 255, .33) (50 + $i + 0%),
+            rgba(255,255,255,0) 100%);
+    }
+  }
 }
 
 button.cancel {
   @extend button.secondary;
+  font-weight: normal;
 }
 
 button.submit {

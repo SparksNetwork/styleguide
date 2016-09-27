@@ -7,20 +7,55 @@ fieldset {
   margin: 0;
   padding: 0;
   display: table;
+  position: relative;
 }
 
 label {
   color: map-get($foreground-colors, label);
   font-weight: bold;
-  display: table-row;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  .help {
+    float: right;
+    font-weight: normal;
+    font-size: em(14);
+  }
 }
 
 input {
   border-radius: $small-radius;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   @extend .input-box;
+  font-size: em(18);
   padding: 10px;
-  display: table-row;
+  display: block;
   width: 100%;
+}
+
+form .actions {
+  margin: 40px 0;
+  width: 100%;
+
+  button.submit {
+    float: right;
+    width: 200px;
+  }
+
+  @include mq($until: 470px) {
+    display: flex;
+    button {
+    }
+    button.submit {
+      float: none;
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+}
+
+.form {
+  padding: $box-padding 0 0 0;
 }

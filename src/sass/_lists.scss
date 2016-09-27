@@ -1,0 +1,54 @@
+@import './colors';
+@import './variables';
+@import './divider';
+
+@mixin list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3.75em;
+  width: 100%;
+  padding: 0 $list-padding 0 $list-padding;
+}
+
+.list {
+  display: block;
+
+  .header {
+    @include list-item;
+    height: 3.125em;
+    font-weight: bold;
+    @extend h2;
+    @extend .list-header-box;
+  }
+
+  .section {
+    display: block;
+    height: auto;
+
+    > div {
+      @include list-item;
+      border: 1px solid map-get($background-colors, list-section)
+    }
+
+    .header {
+      font-size: 0.875em;
+      @extend .list-section-box;
+
+      span {
+        display: block;
+      }
+
+      span:first-child {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .divider {
+    @include divider(map-get($colors, faded), 0);
+    @include list-item;
+    height: 2.5em;
+    @extend .list-divider-box;
+  }
+}
