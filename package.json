@@ -1,13 +1,13 @@
 {
-  "name": "styleguide",
+  "name": "sparks-styleguide",
   "version": "1.0.0",
   "description": "",
   "main": "src/styleguide.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jeremy Wells <jwells@sparks.network>",
+  "license": "MIT",
   "dependencies": {
     "sass-mq": "^3.2.9"
   },
