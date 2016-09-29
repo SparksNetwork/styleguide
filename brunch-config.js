@@ -14,7 +14,6 @@ module.exports = {
   },
   plugins: {
     postcss: {processors: [require('autoprefixer')]},
-    sass: {},
     static: {
       processors: [
         require('html-brunch-static')({

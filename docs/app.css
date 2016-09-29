@@ -1,13 +1,12 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
-/* line 5, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
+/* line 4, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
 a {
   color: #1778e9;
   text-decoration: none; }
-  /* line 9, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
+  /* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
+/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
 strong, .strong {
   font-weight: bold; }
 
@@ -815,18 +814,18 @@ form .actions {
   padding: 0 1.25em;
   font-size: 0.875em; }
 
-/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
 html, body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0; }
 
-/* line 20, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 20, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
 html, body, * {
   box-sizing: border-box; }
 
-/* line 24, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 24, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
 .divider {
   display: block;
   text-align: center;
@@ -857,14 +856,14 @@ html, body, * {
       left: 100%;
       margin-left: 0.625em; }
 
-/* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+/* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
 .federated-buttons {
   display: flex; }
-  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
   .federated-buttons button {
     flex-grow: 1; }
     @media (max-width: 29.375em) {
-      /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/styleguide.scss */
+      /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
       .federated-buttons button {
         font-size: 0.75em; } }
 

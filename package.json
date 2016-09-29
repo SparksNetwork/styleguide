@@ -8,9 +8,7 @@
   },
   "author": "Jeremy Wells <jwells@sparks.network>",
   "license": "MIT",
-  "dependencies": {
-    "sass-mq": "^3.2.9"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.4.1",
     "browser-sync-brunch": "0.0.9",
