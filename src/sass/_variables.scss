@@ -1,8 +1,25 @@
 $browser-context: 16;
 $default-font: 'Open Sans', sans-serif;
 
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
 @function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em;
+  @return (strip-unit($pixels) / $context) + 0em;
+}
+@function rem($pixels, $context: $browser-context) {
+  @if unit($pixels) == 'em' {
+    @return strip-unit($pixels) + 0rem;
+  }
+
+  @return (strip-unit($pixels)/$context) + 0rem;
+}
+@function px($em, $context: $browser-context){
+  @return (strip-unit($em) * $context) + 0px;
 }
 
 $small-radius: em(6);
@@ -10,4 +27,8 @@ $large-radius: em(12);
 
 $button-spacing: em(20);
 $list-padding: em(20);
-$box-padding: em(30);
+
+$box-border-radius: em(12);
+$box-padding-height: em(30);
+$box-padding-width: em(40);
+$box-footer-margin: em(40);

@@ -1,0 +1,34 @@
+@import '../variables';
+
+.federated-buttons {
+  display: flex;
+  margin: 0 -#{$button-spacing/2};
+
+  button {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin: 0 $button-spacing/2;
+
+    @include mq($until: 470px) {
+      font-size: em(12);
+    }
+  }
+}
+
+.login.box {
+}
+
+.join.box {
+  @include mq($from: 480px) {
+    width: em(480);
+  }
+
+  .federated-buttons {
+    flex-direction: column;
+    margin-top: em(20);
+
+    button {
+      margin-bottom: em(13);
+    }
+  }
+}

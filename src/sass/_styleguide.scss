@@ -1,5 +1,4 @@
 @import './variables';
-@import './fonts';
 @import './boxes';
 @import './layout';
 @import './buttons';
@@ -9,6 +8,8 @@
 @import './avatars';
 @import './status';
 @import './pills';
+
+@import './pages/join';
 
 html, body {
   font-size: #{$browser-context}px;
@@ -21,22 +22,34 @@ html, body, * {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+  font-size: em(14);
+  color: map-get($colors, label);
+}
+
+p.note {
+  font-size: em(12);
+}
+
+a {
+  color: map-get($colors, link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+strong, .strong {
+  font-weight: bold;
+}
+
 .divider {
   @include divider(map-get($colors, faded), 0.625em);
   color: map-get($colors, secondary);
   text-transform: uppercase;
-  padding: $box-padding 0 0 0;
   font-weight: bold;
+  margin: 0 0 20px 0;
 }
 
-.federated-buttons {
-  display: flex;
-
-  button {
-    flex-grow: 1;
-
-    @include mq($until: 470px) {
-      font-size: em(12);
-    }
-  }
-}

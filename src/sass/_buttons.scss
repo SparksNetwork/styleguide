@@ -1,5 +1,5 @@
 @import './variables';
-@import './boxes';
+@import './colors';
 
 $button-default-radius: $small-radius;
 $button-default-border: 2px solid map-get($colors, secondary);
@@ -24,11 +24,11 @@ button {
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-right: $button-spacing / 2;
-
-    @include mq($from: 470px) {
-      margin-right: $button-spacing;
-    }
+    //margin-right: $button-spacing / 2;
+    //
+    //@include mq($from: 470px) {
+    //  margin-right: $button-spacing;
+    //}
   }
 
   &:hover {

@@ -1,121 +1,125 @@
-/* line 4, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
-a {
-  color: #1778e9;
-  text-decoration: none; }
-  /* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
-  a:hover {
-    text-decoration: underline; }
-
-/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_fonts.scss */
-strong, .strong {
-  font-weight: bold; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .primary-box {
   color: #fff;
   background-color: #f76303;
   border-color: #f76303; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .secondary-box {
   color: #9b9b9b;
   background-color: #fff;
   border-color: #9b9b9b; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .google-box {
   color: #fff;
   background-color: #d10000;
   border-color: #d10000; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .facebook-box {
   color: #fff;
   background-color: #4a4e9e;
   border-color: #4a4e9e; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .box-box, .box {
   color: #000;
   background-color: #fff; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .box-footer-box, .box .footer {
   color: #4a4a4a;
   background-color: #e7f1fc;
   border-color: #e7f1fc; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .input-box, input {
   color: #4a4a4a;
   background-color: #fff;
   border-color: #ccc; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .list-header-box, .list .header {
   color: #000;
   background-color: #d5cfd6; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .list-section-box, .list .section .header {
   color: #727172;
   background-color: #e5e3e5; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .list-divider-box, .list .divider {
   color: #d9d9d9;
   background-color: #eeeeee; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .pill-box, .pill {
   color: #fff;
   background-color: #45294e; }
 
-/* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+.inverted-box {
+  color: #fff;
+  background-color: #9b9b9b; }
+
+/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .box {
-  padding: 1.875em 1.875em 0 1.875em; }
-  @media (min-width: 40em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  padding: 1.875em 2.5em 0 2.5em; }
+  @media (min-width: 30em) {
+    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
-      width: 640px; } }
-  @media (min-width: 29.375em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      min-width: 470px;
+      width: 480px;
       border-top-left-radius: 0.75em;
       border-top-right-radius: 0.75em; } }
-  @media (max-width: 29.375em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  @media (min-width: 40em) {
+    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    .box {
+      width: 640px; } }
+  @media (max-width: 30em) {
+    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .box {
       width: 100%; } }
-  /* line 33, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 31, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .box > h1 {
     font-size: 2em;
-    margin: 0; }
-  /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    font-weight: bold;
+    margin: 0 0 0.625em 0; }
+  /* line 37, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .box > .content {
+    margin: 0 0 1.25em 0; }
+  /* line 41, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .box .footer {
     position: relative;
-    top: 0.75em;
-    margin: 0 -1.875em 0 -1.875em;
+    top: 0.75rem;
+    margin-top: 1.75rem;
+    margin-left: -2.5rem;
+    margin-bottom: 0;
+    margin-right: -2.5rem;
     text-align: center;
-    padding: 10px; }
+    padding: 1.42857em;
+    font-size: 0.875em; }
     @media (min-width: 29.375em) {
-      /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+      /* line 41, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
       .box .footer {
-        border-bottom-left-radius: 0.625em;
-        border-bottom-right-radius: 0.625em; } }
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.75rem; } }
+    /* line 59, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    .box .footer > *:last-child {
+      margin-bottom: 0; }
 
-/* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 65, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 section {
   margin: 0; }
 
-/* line 58, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+/* line 69, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
 .photo-background {
   background-position: 50% 50%;
   background-size: cover;
   width: 100vw;
   height: 100vh; }
-  /* line 64, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 75, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .photo-background > div {
     display: flex;
     flex-direction: column;
@@ -123,15 +127,15 @@ section {
     align-content: center;
     justify-content: center;
     width: 100%; }
-  /* line 74, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 85, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .photo-background > h1 {
     display: block;
     color: #fff;
-    padding: 40px; }
+    padding: 2.5em; }
     @media (max-width: 29.375em) {
-      /* line 74, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+      /* line 85, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
       .photo-background > h1 {
-        padding: 30px; } }
+        padding: 1.875em; } }
 
 /* line 3, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
 h1, h2, .list .header, h3, h4, h5 {
@@ -156,129 +160,6 @@ h2, .list .header {
   .header .avatar {
     width: 1.875em;
     height: 1.875em; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.primary-box {
-  color: #fff;
-  background-color: #f76303;
-  border-color: #f76303; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.secondary-box {
-  color: #9b9b9b;
-  background-color: #fff;
-  border-color: #9b9b9b; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.google-box {
-  color: #fff;
-  background-color: #d10000;
-  border-color: #d10000; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.facebook-box {
-  color: #fff;
-  background-color: #4a4e9e;
-  border-color: #4a4e9e; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box-box, .box {
-  color: #000;
-  background-color: #fff; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box-footer-box, .box .footer {
-  color: #4a4a4a;
-  background-color: #e7f1fc;
-  border-color: #e7f1fc; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.input-box, input {
-  color: #4a4a4a;
-  background-color: #fff;
-  border-color: #ccc; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.list-header-box, .list .header {
-  color: #000;
-  background-color: #d5cfd6; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.list-section-box, .list .section .header {
-  color: #727172;
-  background-color: #e5e3e5; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.list-divider-box, .list .divider {
-  color: #d9d9d9;
-  background-color: #eeeeee; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.pill-box, .pill {
-  color: #fff;
-  background-color: #45294e; }
-
-/* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box {
-  padding: 1.875em 1.875em 0 1.875em; }
-  @media (min-width: 40em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 640px; } }
-  @media (min-width: 29.375em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      min-width: 470px;
-      border-top-left-radius: 0.75em;
-      border-top-right-radius: 0.75em; } }
-  @media (max-width: 29.375em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 100%; } }
-  /* line 33, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box > h1 {
-    font-size: 2em;
-    margin: 0; }
-  /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box .footer {
-    position: relative;
-    top: 0.75em;
-    margin: 0 -1.875em 0 -1.875em;
-    text-align: center;
-    padding: 10px; }
-    @media (min-width: 29.375em) {
-      /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .box .footer {
-        border-bottom-left-radius: 0.625em;
-        border-bottom-right-radius: 0.625em; } }
-
-/* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-section {
-  margin: 0; }
-
-/* line 58, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.photo-background {
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh; }
-  /* line 64, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .photo-background > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%; }
-  /* line 74, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .photo-background > h1 {
-    display: block;
-    color: #fff;
-    padding: 40px; }
-    @media (max-width: 29.375em) {
-      /* line 74, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .photo-background > h1 {
-        padding: 30px; } }
 
 /* line 9, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
 button.primary, button.submit {
@@ -341,6 +222,11 @@ button.pill {
   color: #fff;
   background-color: #45294e; }
 
+/* line 9, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
+button.inverted {
+  color: #fff;
+  background-color: #9b9b9b; }
+
 /* line 16, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
 button {
   background: transparent;
@@ -351,13 +237,6 @@ button {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   cursor: pointer; }
-  /* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
-  button:not(:last-child) {
-    margin-right: 1.25em/2; }
-    @media (min-width: 29.375em) {
-      /* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
-      button:not(:last-child) {
-        margin-right: 1.25em; } }
   /* line 37, /Users/jeremy/src/sparks/styleguide/src/sass/_buttons.scss */
   button:focus {
     outline: none;
@@ -471,150 +350,26 @@ button {
 button.cancel {
   font-weight: normal; }
 
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.primary-box {
-  color: #fff;
-  background-color: #f76303;
-  border-color: #f76303; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.secondary-box {
-  color: #9b9b9b;
-  background-color: #fff;
-  border-color: #9b9b9b; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.google-box {
-  color: #fff;
-  background-color: #d10000;
-  border-color: #d10000; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.facebook-box {
-  color: #fff;
-  background-color: #4a4e9e;
-  border-color: #4a4e9e; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box-box, .box {
-  color: #000;
-  background-color: #fff; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box-footer-box, .box .footer {
-  color: #4a4a4a;
-  background-color: #e7f1fc;
-  border-color: #e7f1fc; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.input-box, input {
-  color: #4a4a4a;
-  background-color: #fff;
-  border-color: #ccc; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.list-header-box, .list .header {
-  color: #000;
-  background-color: #d5cfd6; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.list-section-box, .list .section .header {
-  color: #727172;
-  background-color: #e5e3e5; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.list-divider-box, .list .divider {
-  color: #d9d9d9;
-  background-color: #eeeeee; }
-
-/* line 8, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.pill-box, .pill {
-  color: #fff;
-  background-color: #45294e; }
-
-/* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box {
-  padding: 1.875em 1.875em 0 1.875em; }
-  @media (min-width: 40em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 640px; } }
-  @media (min-width: 29.375em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      min-width: 470px;
-      border-top-left-radius: 0.75em;
-      border-top-right-radius: 0.75em; } }
-  @media (max-width: 29.375em) {
-    /* line 15, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 100%; } }
-  /* line 33, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box > h1 {
-    font-size: 2em;
-    margin: 0; }
-  /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box .footer {
-    position: relative;
-    top: 0.75em;
-    margin: 0 -1.875em 0 -1.875em;
-    text-align: center;
-    padding: 10px; }
-    @media (min-width: 29.375em) {
-      /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .box .footer {
-        border-bottom-left-radius: 0.625em;
-        border-bottom-right-radius: 0.625em; } }
-
-/* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-section {
-  margin: 0; }
-
-/* line 58, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.photo-background {
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh; }
-  /* line 64, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .photo-background > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%; }
-  /* line 74, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .photo-background > h1 {
-    display: block;
-    color: #fff;
-    padding: 40px; }
-    @media (max-width: 29.375em) {
-      /* line 74, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .photo-background > h1 {
-        padding: 30px; } }
-
-/* line 5, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+/* line 4, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 fieldset {
   border: 0;
-  margin: 0;
+  margin: 0 0 1.25em 0;
   padding: 0;
   display: table;
   position: relative; }
 
-/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+/* line 12, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 label {
   font-weight: bold;
   display: block;
-  margin-top: 1.25em;
   margin-bottom: 0.625em; }
-  /* line 20, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+  /* line 18, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
   label .help {
     float: right;
     font-weight: normal;
     font-size: 0.875em; }
 
-/* line 27, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+/* line 25, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 input {
   border-radius: 0.375em;
   border-width: 2px;
@@ -624,27 +379,23 @@ input {
   display: block;
   width: 100%; }
 
-/* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+/* line 36, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
 form .actions {
   margin: 2.5em 0;
   width: 100%; }
-  /* line 42, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+  /* line 40, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
   form .actions button.submit {
     float: right;
     width: 12.5em; }
   @media (max-width: 29.375em) {
-    /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+    /* line 36, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
     form .actions {
       display: flex; }
-      /* line 51, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
+      /* line 49, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
       form .actions button.submit {
         float: none;
         width: auto;
         flex-grow: 1; } }
-
-/* line 59, /Users/jeremy/src/sparks/styleguide/src/sass/_forms.scss */
-.form {
-  padding: 1.875em 0 0 0; }
 
 /* line 34, /Users/jeremy/src/sparks/styleguide/src/sass/_lists.scss */
 .list {
@@ -814,18 +565,67 @@ form .actions {
   padding: 0 1.25em;
   font-size: 0.875em; }
 
-/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
+/* line 3, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+.federated-buttons {
+  display: flex;
+  margin: 0 -0.625em; }
+  /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+  .federated-buttons button {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin: 0 0.625em; }
+    @media (max-width: 29.375em) {
+      /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+      .federated-buttons button {
+        font-size: 0.75em; } }
+
+@media (min-width: 30em) {
+  /* line 21, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+  .join.box {
+    width: 30em; } }
+
+/* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+.join.box .federated-buttons {
+  flex-direction: column;
+  margin-top: 1.25em; }
+  /* line 30, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+  .join.box .federated-buttons button {
+    margin-bottom: 0.8125em; }
+
+/* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 html, body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0; }
 
-/* line 20, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
+/* line 21, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 html, body, * {
   box-sizing: border-box; }
 
-/* line 24, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
+/* line 25, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+p {
+  margin: 0;
+  font-size: 0.875em;
+  color: #4a4a4a; }
+
+/* line 31, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+p.note {
+  font-size: 0.75em; }
+
+/* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+a {
+  color: #1778e9;
+  text-decoration: none; }
+  /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  a:hover {
+    text-decoration: underline; }
+
+/* line 44, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+strong, .strong {
+  font-weight: bold; }
+
+/* line 48, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 .divider {
   display: block;
   text-align: center;
@@ -833,8 +633,8 @@ html, body, * {
   white-space: nowrap;
   color: #9b9b9b;
   text-transform: uppercase;
-  padding: 1.875em 0 0 0;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 0 20px 0; }
   /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/_divider.scss */
   .divider span {
     position: relative;
@@ -855,17 +655,6 @@ html, body, * {
     .divider span:after {
       left: 100%;
       margin-left: 0.625em; }
-
-/* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
-.federated-buttons {
-  display: flex; }
-  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
-  .federated-buttons button {
-    flex-grow: 1; }
-    @media (max-width: 29.375em) {
-      /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/index.scss */
-      .federated-buttons button {
-        font-size: 0.75em; } }
 
 
 /*# sourceMappingURL=app.css.map*/

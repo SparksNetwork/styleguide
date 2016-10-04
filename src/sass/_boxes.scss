@@ -2,8 +2,6 @@
 @import './variables';
 @import './colors';
 
-$box-border-radius: em(12);
-
 @each $key, $value in $background-colors {
   .#{$key}-box {
     color: map-get($foreground-colors, $key);
@@ -14,40 +12,53 @@ $box-border-radius: em(12);
 
 .box {
   @extend .box-box;
-  padding: $box-padding $box-padding 0 $box-padding;
+  padding: $box-padding-height $box-padding-width 0 $box-padding-width;
+
+  @include mq($from: 480px) {
+    width: 480px;
+    border-top-left-radius: $box-border-radius;
+    border-top-right-radius: $box-border-radius;
+  }
 
   @include mq($from: 640px) {
     width: 640px;
   }
 
-  @include mq($from: 470px) {
-    min-width: 470px;
-    border-top-left-radius: $box-border-radius;
-    border-top-right-radius: $box-border-radius;
-  }
-
-  @include mq($until: 470px) {
+  @include mq($until: 480px) {
     width: 100%;
   }
 
   >h1 {
     font-size: em(32);
-    margin: 0;
+    font-weight: bold;
+    margin: 0 0 em(20, 32) 0;
+  }
+
+  > .content {
+    margin: 0 0 em(20) 0;
   }
 
   .footer {
     position: relative;
-    top: $box-border-radius;
+    top: rem($box-border-radius);
     @extend .box-footer-box;
 
     @include mq($from: 470px) {
-      border-bottom-left-radius: em(10);
-      border-bottom-right-radius: em(10);
+      border-bottom-left-radius: rem($box-border-radius);
+      border-bottom-right-radius: rem($box-border-radius);
     }
 
-    margin: 0 -#{$box-padding} 0 -#{$box-padding};
+    margin-top: #{rem($box-footer-margin - $box-border-radius)};
+    margin-left: -#{rem($box-padding-width)} ;
+    margin-bottom: 0 ;
+    margin-right: -#{rem($box-padding-width)};
     text-align: center;
-    padding: 10px;
+    padding: em(20, 14);
+    font-size: em(14);
+
+    >*:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -75,10 +86,10 @@ section {
     display: block;
     color: #fff;
 
-    padding: 40px;
+    padding: em(40);
 
     @include mq($until: 470px) {
-      padding: 30px;
+      padding: em(30);
     }
   }
 }
