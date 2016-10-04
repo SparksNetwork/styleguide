@@ -53,3 +53,35 @@ strong, .strong {
   margin: 0 0 20px 0;
 }
 
+
+section {
+  margin: 0;
+}
+
+.photo-background {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  > h1 {
+    display: block;
+    color: #fff;
+
+    padding: em(40);
+
+    @include mq($until: 470px) {
+      padding: em(30);
+    }
+  }
+}

@@ -10,21 +10,19 @@
   }
 }
 
-.box {
+@mixin box($breakpoints) {
   @extend .box-box;
   padding: $box-padding-height $box-padding-width 0 $box-padding-width;
 
-  @include mq($from: 480px) {
-    width: 480px;
-    border-top-left-radius: $box-border-radius;
-    border-top-right-radius: $box-border-radius;
+  @each $breakpoint in $breakpoints {
+    @include mq($from: $breakpoint) {
+      width: $breakpoint;
+      border-top-left-radius: $box-border-radius;
+      border-top-right-radius: $box-border-radius;
+    }
   }
 
-  @include mq($from: 640px) {
-    width: 640px;
-  }
-
-  @include mq($until: 480px) {
+  @include mq($until: nth($breakpoints, 1)) {
     width: 100%;
   }
 
@@ -43,7 +41,7 @@
     top: rem($box-border-radius);
     @extend .box-footer-box;
 
-    @include mq($from: 470px) {
+    @include mq($from: nth($breakpoints, 1)) {
       border-bottom-left-radius: rem($box-border-radius);
       border-bottom-right-radius: rem($box-border-radius);
     }
@@ -58,38 +56,6 @@
 
     >*:last-child {
       margin-bottom: 0;
-    }
-  }
-}
-
-section {
-  margin: 0;
-}
-
-.photo-background {
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-    width: 100%;
-  }
-
-  > h1 {
-    display: block;
-    color: #fff;
-
-    padding: em(40);
-
-    @include mq($until: 470px) {
-      padding: em(30);
     }
   }
 }

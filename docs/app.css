@@ -23,12 +23,12 @@
   border-color: #4a4e9e; }
 
 /* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box-box, .box {
+.box-box, .login.box, .join.box {
   color: #000;
   background-color: #fff; }
 
 /* line 6, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box-footer-box, .box .footer {
+.box-footer-box, .login.box .footer, .join.box .footer {
   color: #4a4a4a;
   background-color: #e7f1fc;
   border-color: #e7f1fc; }
@@ -63,79 +63,6 @@
 .inverted-box {
   color: #fff;
   background-color: #9b9b9b; }
-
-/* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.box {
-  padding: 1.875em 2.5em 0 2.5em; }
-  @media (min-width: 30em) {
-    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 480px;
-      border-top-left-radius: 0.75em;
-      border-top-right-radius: 0.75em; } }
-  @media (min-width: 40em) {
-    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 640px; } }
-  @media (max-width: 30em) {
-    /* line 13, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box {
-      width: 100%; } }
-  /* line 31, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box > h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0 0 0.625em 0; }
-  /* line 37, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box > .content {
-    margin: 0 0 1.25em 0; }
-  /* line 41, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .box .footer {
-    position: relative;
-    top: 0.75rem;
-    margin-top: 1.75rem;
-    margin-left: -2.5rem;
-    margin-bottom: 0;
-    margin-right: -2.5rem;
-    text-align: center;
-    padding: 1.42857em;
-    font-size: 0.875em; }
-    @media (min-width: 29.375em) {
-      /* line 41, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .box .footer {
-        border-bottom-left-radius: 0.75rem;
-        border-bottom-right-radius: 0.75rem; } }
-    /* line 59, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-    .box .footer > *:last-child {
-      margin-bottom: 0; }
-
-/* line 65, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-section {
-  margin: 0; }
-
-/* line 69, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-.photo-background {
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh; }
-  /* line 75, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .photo-background > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%; }
-  /* line 85, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-  .photo-background > h1 {
-    display: block;
-    color: #fff;
-    padding: 2.5em; }
-    @media (max-width: 29.375em) {
-      /* line 85, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .photo-background > h1 {
-        padding: 1.875em; } }
 
 /* line 3, /Users/jeremy/src/sparks/styleguide/src/sass/_layout.scss */
 h1, h2, .list .header, h3, h4, h5 {
@@ -574,23 +501,117 @@ form .actions {
     flex-grow: 1;
     flex-basis: 100%;
     margin: 0 0.625em; }
-    @media (max-width: 29.375em) {
-      /* line 7, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
-      .federated-buttons button {
-        font-size: 0.75em; } }
 
-@media (min-width: 30em) {
-  /* line 21, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
-  .join.box {
-    width: 30em; } }
+/* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+.login.box {
+  padding: 1.875em 2.5em 0 2.5em; }
+  @media (min-width: 30em) {
+    /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .login.box {
+      width: 480px;
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; } }
+  @media (min-width: 40em) {
+    /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .login.box {
+      width: 640px;
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; } }
+  @media (max-width: 30em) {
+    /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .login.box {
+      width: 100%; } }
+  /* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .login.box > h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 0.625em 0; }
+  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .login.box > .content {
+    margin: 0 0 1.25em 0; }
+  /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .login.box .footer {
+    position: relative;
+    top: 0.75rem;
+    margin-top: 1.75rem;
+    margin-left: -2.5rem;
+    margin-bottom: 0;
+    margin-right: -2.5rem;
+    text-align: center;
+    padding: 1.42857em;
+    font-size: 0.875em; }
+    @media (min-width: 30em) {
+      /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+      .login.box .footer {
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.75rem; } }
+    /* line 57, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    .login.box .footer > *:last-child {
+      margin-bottom: 0; }
+  @media (max-width: 40em) {
+    /* line 18, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .login.box .federated-buttons {
+      font-size: 0.75em; } }
+  @media (max-width: 30em) {
+    /* line 24, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .login.box .cancel {
+      display: none; }
+    /* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .login.box .federated-buttons {
+      font-size: 0.875em;
+      flex-direction: column;
+      margin: -0.625em; }
+      /* line 31, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+      .login.box .federated-buttons button {
+        margin: 0.625em 0; } }
 
-/* line 26, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
-.join.box .federated-buttons {
-  flex-direction: column;
-  margin-top: 1.25em; }
-  /* line 30, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
-  .join.box .federated-buttons button {
-    margin-bottom: 0.8125em; }
+/* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+.join.box {
+  padding: 1.875em 2.5em 0 2.5em; }
+  @media (min-width: 30em) {
+    /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .join.box {
+      width: 480px;
+      border-top-left-radius: 0.75em;
+      border-top-right-radius: 0.75em; } }
+  @media (max-width: 30em) {
+    /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .join.box {
+      width: 100%; } }
+  /* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .join.box > h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 0.625em 0; }
+  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .join.box > .content {
+    margin: 0 0 1.25em 0; }
+  /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  .join.box .footer {
+    position: relative;
+    top: 0.75rem;
+    margin-top: 1.75rem;
+    margin-left: -2.5rem;
+    margin-bottom: 0;
+    margin-right: -2.5rem;
+    text-align: center;
+    padding: 1.42857em;
+    font-size: 0.875em; }
+    @media (min-width: 30em) {
+      /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+      .join.box .footer {
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.75rem; } }
+    /* line 57, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    .join.box .footer > *:last-child {
+      margin-bottom: 0; }
+  /* line 41, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+  .join.box .federated-buttons {
+    flex-direction: column;
+    margin-top: 1.25em; }
+    /* line 45, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    .join.box .federated-buttons button {
+      margin-bottom: 0.8125em; }
 
 /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 html, body {
@@ -655,6 +676,34 @@ strong, .strong {
     .divider span:after {
       left: 100%;
       margin-left: 0.625em; }
+
+/* line 57, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+section {
+  margin: 0; }
+
+/* line 61, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+.photo-background {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; }
+  /* line 67, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  .photo-background > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%; }
+  /* line 77, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  .photo-background > h1 {
+    display: block;
+    color: #fff;
+    padding: 2.5em; }
+    @media (max-width: 29.375em) {
+      /* line 77, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+      .photo-background > h1 {
+        padding: 1.875em; } }
 
 
 /*# sourceMappingURL=app.css.map*/

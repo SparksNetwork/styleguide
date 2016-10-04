@@ -8,20 +8,35 @@
     flex-grow: 1;
     flex-basis: 100%;
     margin: 0 $button-spacing/2;
-
-    @include mq($until: 470px) {
-      font-size: em(12);
-    }
   }
 }
 
 .login.box {
+  @include box(480px 640px);
+
+  @include mq($until: 640px) {
+    .federated-buttons {
+      font-size: em(12);
+    }
+  }
+
+  @include mq($until: 480px) {
+    .cancel { display: none; }
+
+    .federated-buttons {
+      font-size: em(14);
+      flex-direction: column;
+      margin: -#{$button-spacing/2};
+
+      button {
+        margin: $button-spacing/2 0;
+      }
+    }
+  }
 }
 
 .join.box {
-  @include mq($from: 480px) {
-    width: em(480);
-  }
+  @include box(480px);
 
   .federated-buttons {
     flex-direction: column;
