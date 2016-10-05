@@ -27,7 +27,10 @@
             <div class="content" style="display: flex; flex-direction: column;">
                 <button class="join-email inverted" onclick="
                     this.parentNode.classList.add('hidden');
-                    this.parentNode.nextElementSibling.classList.remove('hidden')">
+                    this.parentNode.nextElementSibling.classList.add('shown');
+                    this.parentNode.nextElementSibling.classList.remove('hidden');
+                    setTimeout(() => this.parentNode.nextElementSibling.classList.remove('shown'), 10);
+                 ">
                     Create an account with email
                 </button>
             </div>

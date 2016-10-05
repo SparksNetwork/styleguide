@@ -504,35 +504,39 @@ form .actions {
 
 /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
 .login.box {
-  padding: 1.875em 2.5em 0 2.5em; }
+  padding: 1.875em 2.5em 0 2.5em;
+  overflow: hidden; }
   @media (min-width: 30em) {
     /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
     .login.box {
       width: 480px;
       border-top-left-radius: 0.75em;
-      border-top-right-radius: 0.75em; } }
+      border-top-right-radius: 0.75em;
+      border-bottom-left-radius: 0.75em;
+      border-bottom-right-radius: 0.75em; } }
   @media (min-width: 40em) {
     /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
     .login.box {
       width: 640px;
       border-top-left-radius: 0.75em;
-      border-top-right-radius: 0.75em; } }
+      border-top-right-radius: 0.75em;
+      border-bottom-left-radius: 0.75em;
+      border-bottom-right-radius: 0.75em; } }
   @media (max-width: 30em) {
     /* line 14, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
     .login.box {
       width: 100%; } }
-  /* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .login.box > h1 {
     font-size: 2em;
     font-weight: bold;
     margin: 0 0 0.625em 0; }
-  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .login.box > .content {
     margin: 0 0 1.25em 0; }
-  /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 42, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .login.box .footer {
     position: relative;
-    top: 0.75rem;
     margin-top: 1.75rem;
     margin-left: -2.5rem;
     margin-bottom: 0;
@@ -540,12 +544,7 @@ form .actions {
     text-align: center;
     padding: 1.42857em;
     font-size: 0.875em; }
-    @media (min-width: 30em) {
-      /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .login.box .footer {
-        border-bottom-left-radius: 0.75rem;
-        border-bottom-right-radius: 0.75rem; } }
-    /* line 57, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .login.box .footer > *:last-child {
       margin-bottom: 0; }
   @media (max-width: 40em) {
@@ -567,29 +566,31 @@ form .actions {
 
 /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
 .join.box {
-  padding: 1.875em 2.5em 0 2.5em; }
+  padding: 1.875em 2.5em 0 2.5em;
+  overflow: hidden; }
   @media (min-width: 30em) {
     /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
     .join.box {
       width: 480px;
       border-top-left-radius: 0.75em;
-      border-top-right-radius: 0.75em; } }
+      border-top-right-radius: 0.75em;
+      border-bottom-left-radius: 0.75em;
+      border-bottom-right-radius: 0.75em; } }
   @media (max-width: 30em) {
     /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
     .join.box {
       width: 100%; } }
-  /* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 32, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .join.box > h1 {
     font-size: 2em;
     font-weight: bold;
     margin: 0 0 0.625em 0; }
-  /* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 38, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .join.box > .content {
     margin: 0 0 1.25em 0; }
-  /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+  /* line 42, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
   .join.box .footer {
     position: relative;
-    top: 0.75rem;
     margin-top: 1.75rem;
     margin-left: -2.5rem;
     margin-bottom: 0;
@@ -597,19 +598,21 @@ form .actions {
     text-align: center;
     padding: 1.42857em;
     font-size: 0.875em; }
-    @media (min-width: 30em) {
-      /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
-      .join.box .footer {
-        border-bottom-left-radius: 0.75rem;
-        border-bottom-right-radius: 0.75rem; } }
-    /* line 57, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
+    /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/_boxes.scss */
     .join.box .footer > *:last-child {
       margin-bottom: 0; }
   /* line 41, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+  .join.box .content.shown {
+    max-height: 0; }
+  /* line 45, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+  .join.box .content {
+    transition: max-height .25s ease-in;
+    max-height: 1000px; }
+  /* line 50, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
   .join.box .federated-buttons {
     flex-direction: column;
     margin-top: 1.25em; }
-    /* line 45, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
+    /* line 54, /Users/jeremy/src/sparks/styleguide/src/sass/pages/_join.scss */
     .join.box .federated-buttons button {
       margin-bottom: 0.8125em; }
 
@@ -625,28 +628,32 @@ html, body, * {
   box-sizing: border-box; }
 
 /* line 25, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+body {
+  background: #000; }
+
+/* line 29, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 p {
   margin: 0;
   font-size: 0.875em;
   color: #4a4a4a; }
 
-/* line 31, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+/* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 p.note {
   font-size: 0.75em; }
 
-/* line 35, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+/* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 a {
   color: #1778e9;
   text-decoration: none; }
-  /* line 39, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  /* line 43, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 44, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+/* line 48, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 strong, .strong {
   font-weight: bold; }
 
-/* line 48, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+/* line 52, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 .divider {
   display: block;
   text-align: center;
@@ -677,22 +684,24 @@ strong, .strong {
       left: 100%;
       margin-left: 0.625em; }
 
-/* line 57, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+/* line 61, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 section {
   margin: 0; }
 
-/* line 61, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
-.hidden {
-  display: none !important; }
-
 /* line 65, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+.hidden {
+  display: none !important;
+  max-height: 0px; }
+
+/* line 70, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 .photo-background {
-  background-position: 50% 50%;
+  background-position: 50% 0;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 100px; }
-  /* line 72, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  /* line 78, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
   .photo-background > div {
     display: flex;
     flex-direction: column;
@@ -700,13 +709,13 @@ section {
     align-content: center;
     justify-content: center;
     width: 100%; }
-  /* line 82, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  /* line 88, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
   .photo-background > h1 {
     display: block;
     color: #fff;
     padding: 2.5em; }
     @media (max-width: 29.375em) {
-      /* line 82, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+      /* line 88, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
       .photo-background > h1 {
         padding: 1.875em; } }
 

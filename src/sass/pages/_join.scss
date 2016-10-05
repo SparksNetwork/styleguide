@@ -38,6 +38,15 @@
 .join.box {
   @include box(480px);
 
+  .content.shown {
+    max-height: 0;
+  }
+
+  .content {
+    transition: max-height .25s ease-in;
+    max-height: 1000px;
+  }
+
   .federated-buttons {
     flex-direction: column;
     margin-top: em(20);

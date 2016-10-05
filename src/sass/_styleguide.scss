@@ -22,6 +22,10 @@ html, body, * {
   box-sizing: border-box;
 }
 
+body {
+  background: #000;
+}
+
 p {
   margin: 0;
   font-size: em(14);
@@ -60,11 +64,13 @@ section {
 
 .hidden {
   display: none !important;
+  max-height: 0px;
 }
 
 .photo-background {
-  background-position: 50% 50%;
+  background-position: 50% 0;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 100px;
