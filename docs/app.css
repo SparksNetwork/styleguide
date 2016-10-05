@@ -682,12 +682,17 @@ section {
   margin: 0; }
 
 /* line 61, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+.hidden {
+  display: none !important; }
+
+/* line 65, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
 .photo-background {
   background-position: 50% 50%;
   background-size: cover;
   width: 100vw;
-  height: 100vh; }
-  /* line 67, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  min-height: 100vh;
+  padding-bottom: 100px; }
+  /* line 72, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
   .photo-background > div {
     display: flex;
     flex-direction: column;
@@ -695,13 +700,13 @@ section {
     align-content: center;
     justify-content: center;
     width: 100%; }
-  /* line 77, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+  /* line 82, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
   .photo-background > h1 {
     display: block;
     color: #fff;
     padding: 2.5em; }
     @media (max-width: 29.375em) {
-      /* line 77, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
+      /* line 82, /Users/jeremy/src/sparks/styleguide/src/sass/_styleguide.scss */
       .photo-background > h1 {
         padding: 1.875em; } }
 

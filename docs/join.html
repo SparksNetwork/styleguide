@@ -33,9 +33,46 @@
             <div class="divider"><span>Or</span></div>
 
             <div class="content" style="display: flex; flex-direction: column;">
-                <button class="join-email inverted">
+                <button class="join-email inverted" onclick="
+                    this.parentNode.classList.add('hidden');
+                    this.parentNode.nextElementSibling.classList.remove('hidden')">
                     Create an account with email
                 </button>
+            </div>
+
+            <div class="content hidden">
+                <form>
+                    <fieldset>
+                        <label>Full name</label>
+                        <input type="text" name="fullName">
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Phone</label>
+                        <input type="number" name="phonenumber">
+                        <p>Your email address and phone number will only be
+                        shared with organizers that you work with</p>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Date of Birth (e.g. 12-25-1987)</label>
+                        <input type="date" name="dob">
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Zip code</label>
+                        <input type="text" name="zip">
+                    </fieldset>
+
+                    <fieldset class="actions">
+                        <button class="submit">Join</button>
+                    </fieldset>
+                </form>
             </div>
 
             <div class="footer">
